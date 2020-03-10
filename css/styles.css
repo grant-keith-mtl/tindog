@@ -1,14 +1,10 @@
+/* Main */
 html{
     scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
-}
-
-#title{
-    background-color: #ff4c68;
-    color: #fff;
 }
 
 h1{
@@ -49,7 +45,7 @@ p{
 
 .nav-link{
     font-size: 1.2rem;
-    font-family: "Montserrat";
+    /* font-family: "Montserrat"; */
     font-weight: 300;
 }
 
@@ -62,6 +58,13 @@ p{
 
 .download-button{
     margin: 5% 3% 5% 0;
+}
+
+/* Title Page */
+
+#title{
+    background-color: #ff4c68;
+    color: #fff;
 }
 
 /* Title Image */
@@ -141,6 +144,8 @@ p{
     font-weight: 900;
 }
 
+/* Footer */
+
 #footer{
     background-color: white;
     text-align: center;
@@ -154,4 +159,16 @@ p{
 .icon:hover{
     opacity: 40%;
 
+}
+
+/* Media Queries */
+
+@media (max-width: 1028px) {
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+    #title{
+        text-align: center;
+    }
 }
